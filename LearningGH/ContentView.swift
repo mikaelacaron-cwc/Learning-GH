@@ -10,8 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "figure.wave").resizable().frame(width: 100, height: 150, alignment: .center)
+            HStack {
+                Image(systemName: "figure.wave")
+                    .resizable()
+                    .frame(width: 50, height: 100, alignment: .center)
+                Image(systemName: "figure.wave")
+                    .resizable()
+                    .frame(width: 50, height: 100, alignment: .center)
+                Image(systemName: "figure.wave")
+                    .resizable()
+                    .frame(width: 50, height: 100, alignment: .center)
+            }
+            
             Text("What's up, CodeCrew!")
+                .font(.title)
+                .fontWeight(.heavy)
                 .padding()
         }
     }
